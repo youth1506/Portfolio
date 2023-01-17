@@ -17,7 +17,7 @@
                 My CV
             </div>
             <div>
-                <button>
+                <button onclick="window.print()">
                     <i class="uil uil-print"></i>
                     Print
                 </button>
@@ -32,7 +32,9 @@
                 <div class="avatar__block">
                     <img src="user.jpg" alt="">
                     <span>
+                        <button onclick="openCommentModal()">
                         <i class="uil uil-comment-dots"></i>
+                    </button>
                     </span>
                 </div>
                 <div>
@@ -57,17 +59,17 @@
                 </ul>
                 <ul class="socials">
                     <li>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/shivam-pabrekar-4254141b0">
                             <i class="uil uil-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://github.com/youth1506">
                             <i class="uil uil-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://www.instagram.com/youth.cooking/">
                             <i class="uil uil-instagram"></i>
                         </a>
                     </li>
@@ -81,7 +83,10 @@
                 <div class="left">
                     <h2>Shivam Pabrekar</h2>
                     <p>I am Shivam Pabrekar, a multi-faceted individual with a strong background in Information Communication Technology and System Maintenance, having completed my ITI in these fields. I am currently expanding my knowledge and skills by pursuing an Advanced Diploma in IT, Networking, and Cloud Computing. Along with that I am also pursuing BSc in Computer Science. I am well versed in Networking and Hardware, which has been an integral part of my ITI and diploma course. I also have basic knowledge in HTML and CSS which I look forward to improve more. I am confident that my technical background and my continued education in these areas will help me excel in the field of IT and I am ready to take on new challenges and opportunities in networking, hardware maintenance and computer science.</p>
-                    <button>Download CV</button>
+                    <button><a href="./images/Modern CV.pdf" download>Download CV</a></button>
+
+                    
+
 
                 </div>
                 <div class="right">
@@ -197,10 +202,16 @@
         <section class="work">
             <h1 class="section__heading">My Recent work</h1>
             <div class="work">
-            <img src="project1.png" alt="" >
+                <a href="staticwebpage.html" target="_blank">
+                    <img src="project1.png" alt="image">
+                  </a>
+                  
         </div>
         <div class="work">
-            <img src="project2.png" alt="">
+            <a href="project2.pdf" target="_blank">
+                <img src="project2.png" alt="image">
+              </a>
+              
         </div>
 
     
@@ -233,7 +244,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form action="">
+                    <form onsubmit="submitForm()">
                         <div class="form__group">
                             <div>
                                 <label for="">Name</label>
